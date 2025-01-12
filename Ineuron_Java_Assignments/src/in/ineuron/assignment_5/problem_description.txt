@@ -1,0 +1,2 @@
+Demonstrate the difference between abstract class and interface by writing programs
+as well as in keypoints.

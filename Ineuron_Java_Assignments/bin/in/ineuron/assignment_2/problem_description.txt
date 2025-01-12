@@ -1,0 +1,23 @@
+Write a Java program to invoke parent class constructor from a child class. Create
+Child class object and parent class constructor must be invoked. Demonstrate by
+writing a program. Also explain key points about Constructor.
+
+Key Points about Constructors:
+
+Purpose:
+Constructors are special methods used to initialize objects.
+They share the same name as the class and do not have a return type.
+
+Types of Constructors:
+Default Constructor: Provided by the compiler if no constructor is defined.
+Parameterized Constructor: Takes arguments to initialize an object with specific values.
+
+Calling Parent Constructor:
+Use super() to explicitly call the parent class constructor.
+If super() is not specified, the default or no-argument constructor of the parent class is invoked implicitly.
+
+Overloading:
+Constructors can be overloaded to allow multiple ways of object initialization.
+
+Inheritance:
+Child class constructors automatically invoke the parent class constructor (default or specified with super()).

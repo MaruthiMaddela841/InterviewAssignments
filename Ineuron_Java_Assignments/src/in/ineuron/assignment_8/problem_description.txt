@@ -1,0 +1,3 @@
+Write a Java program that creates two threads. The first thread should print even
+ numbers between 1 and 10, and the second thread should print odd numbers
+ between 1 and 10.
