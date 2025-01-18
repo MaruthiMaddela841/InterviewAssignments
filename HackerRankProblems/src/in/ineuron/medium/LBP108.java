@@ -2,26 +2,32 @@ package in.ineuron.medium;
 
 import java.util.Scanner;
 
-public class LBP101 {
+public class LBP108 {
 
 	public static void main(String[] args) {
 		
 		Scanner sc=new Scanner(System.in);
         int size=sc.nextInt();
         if(size<100){
+            int sum=0;
         int[] arr=new int[size];
         for(int i=0;i<size;i++){
             arr[i]=sc.nextInt();
         }
         for(int i=0;i<size;i++){
-            System.out.print(arr[i]+" ");
+            int num=arr[i];
+            int temp=num%10;
+            if(temp==3){
+                sum=sum+num;
+            }
         }
-        }
+            System.out.println(sum);
+    }
 
 	}
 
 }
-/*Implement a program to read an array element and write on the screen.
+/*Implement a program to read an array elements and print sum of elements ending with 3 in array.
 
 Input Format
 
@@ -33,7 +39,7 @@ size<100
 
 Output Format
 
-the given array
+sum of elements ending with 3
 
 Sample Input 0
 
@@ -41,12 +47,19 @@ Sample Input 0
 1 2 3 4 5
 Sample Output 0
 
-1 2 3 4 5
+3
 Sample Input 1
 
-8
-1 2 3 8 5 2 7 3
+4
+10 13 20 23
 Sample Output 1
 
-1 2 3 8 5 2 7 3
+36
+Sample Input 2
+
+3
+13 33 23
+Sample Output 2
+
+69
 */
