@@ -7,7 +7,7 @@ public class CheckRotationOfAString {
 	public static void main(String[] args) {
 		
 		StringBuffer str=new StringBuffer("xad");
-		String check="adx";
+		String check="dax";
 		
 		System.out.println(checkRotation(str,check,0));
 		
