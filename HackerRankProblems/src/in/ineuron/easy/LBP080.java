@@ -1,7 +1,8 @@
 package in.ineuron.easy;
 
 import java.util.Scanner;
-import java.util.regex.Pattern;
+
+//import java.util.regex.Pattern;
 
 public class LBP080 {
 
@@ -9,8 +10,8 @@ public class LBP080 {
 		
 		Scanner sc= new Scanner(System.in);
         String str=sc.nextLine();
-        boolean b=Pattern.matches("[#]{1}[0-9a-fA-F]{6}",str);
-        System.out.println(b);
+//        boolean b=Pattern.matches("[#]{1}[0-9a-fA-F]{6}",str);
+//        System.out.println(b);
 
 	}
 

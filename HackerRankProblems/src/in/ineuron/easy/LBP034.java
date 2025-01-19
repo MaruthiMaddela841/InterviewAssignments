@@ -1,8 +1,9 @@
 package in.ineuron.easy;
 
 import java.util.Scanner;
+
 import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+//import java.util.regex.Pattern;
 
 public class LBP034 {
 
@@ -10,14 +11,13 @@ public class LBP034 {
 
 		Scanner sc= new Scanner(System.in);
         String s= sc.nextLine();
-        //Pattern p=Pattern.compile("[a-z]+[0-9]{1,}|[_]{1,}@gmail.com",Pattern.CASE_INSENSITIVE);
-        Pattern p=Pattern.compile("[a-z]+[_|0-9]@gmail[.]com",Pattern.CASE_INSENSITIVE);
-        Matcher m= p.matcher(s);
-        boolean mf=m.find();
-        if(mf)
-            System.out.println("true");
-        else
-            System.out.println("false");
+//        Pattern p=Pattern.compile("[a-z]+[_|0-9]@gmail[.]com",Pattern.CASE_INSENSITIVE);
+//        Matcher m= p.matcher(s);
+//        boolean mf=m.find();
+//        if(mf)
+//            System.out.println("true");
+//        else
+//            System.out.println("false");
 
 	}
 

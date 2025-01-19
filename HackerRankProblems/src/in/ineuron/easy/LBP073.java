@@ -1,7 +1,8 @@
 package in.ineuron.easy;
 
 import java.util.Scanner;
-import java.util.regex.Pattern;
+
+//import java.util.regex.Pattern;
 
 public class LBP073 {
 
@@ -9,13 +10,13 @@ public class LBP073 {
 		
 		 Scanner sc= new Scanner(System.in);
 	        String str= sc.nextLine();
-	        boolean b3 = Pattern.matches("[0-9]{1,5}",str); 
-	        if(b3){
-	            System.out.println("true");
-	        }
-	        else{
-	            System.out.println("false");
-	        }
+//	        boolean b3 = Pattern.matches("[0-9]{1,5}",str); 
+//	        if(b3){
+//	            System.out.println("true");
+//	        }
+//	        else{
+//	            System.out.println("false");
+//	        }
 
 	}
 
