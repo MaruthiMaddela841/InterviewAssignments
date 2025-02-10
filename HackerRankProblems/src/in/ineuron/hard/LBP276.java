@@ -6,7 +6,20 @@ public class LBP276 {
 
 	public static void main(String[] args) {
 		
-		
+		Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        int flag=num;
+        int sum=0;
+        while(num>0){
+            int temp=num%10;
+            sum=sum+temp;
+            num=num/10;
+        }
+        int sqr=(int)Math.pow(sum,2);
+        if(sqr==flag)
+            System.out.println(true);
+        else
+            System.out.println(false);
 
 	}
 
