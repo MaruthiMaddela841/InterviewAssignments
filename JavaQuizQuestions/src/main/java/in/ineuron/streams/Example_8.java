@@ -27,7 +27,19 @@ public class Example_8 {
 		Map<String, Double> collect = list.stream().collect(Collectors.groupingBy(Employee2::getGender,Collectors.averagingInt(Employee2::getAge)));
 		System.out.println(collect);
 		
+		//Age filtered and modified
+		list.stream().filter(x->x.getAge()>33).map(x->{
+			x.setAge(x.getAge()+1);
+			return x;
+		}
+			).collect(Collectors.toList())
+		.forEach(System.out::println);
 		
+		list.stream().filter(x->x.getAge()>33).peek(x->{
+			x.setAge(x.getAge()+1);
+		}
+			).collect(Collectors.toList())
+		.forEach(System.out::println);
 	}
 
 }
