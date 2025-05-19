@@ -1,0 +1,5 @@
+https://reqres.in/
+https://jsonplaceholder.typicode.com
+https://restful-booker.herokuapp.com
+https://petstore.swagger.io
+https://fakerestapi.azurewebsites.net

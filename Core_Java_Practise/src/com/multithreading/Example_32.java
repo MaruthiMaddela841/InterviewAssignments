@@ -18,8 +18,9 @@ public class Example_32 extends Thread {
 	public static void main(String[] args) throws InterruptedException {
 
 		 MyThread_32 t=new MyThread_32();
-		 //t.setDaemon(true);//stmt-1
+		 t.setDaemon(true);//stmt-1
 		 t.start();
+		 Thread.sleep(10000);
 		 System.out.println("end of main thread");
 	}
 }
