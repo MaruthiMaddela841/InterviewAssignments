@@ -15,7 +15,7 @@ public class LBP081 {
                 System.out.print(test+" ");
             }
         }
-
+        sc.close();
 	}
 
 }
