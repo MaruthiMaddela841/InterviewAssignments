@@ -75,9 +75,9 @@ public class PriorityQueueDeepDive {
         // ===============================
         // 10. Custom Object (Tricky)
         // ===============================
-        PriorityQueue<Student> students = new PriorityQueue<>();
-        students.add(new Student(2, "B"));
-        students.add(new Student(1, "A"));
+        PriorityQueue<Student7> students = new PriorityQueue<>();
+        students.add(new Student7(2, "B"));
+        students.add(new Student7(1, "A"));
 
         System.out.println("Students PQ: " + students);
 
