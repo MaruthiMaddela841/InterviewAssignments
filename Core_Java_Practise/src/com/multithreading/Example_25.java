@@ -38,7 +38,8 @@ public class Example_25 {
 		Display_4 d1 = new Display_4();
 		Display_4 d2 = new Display_4();
 		MyThread_25 mt1 = new MyThread_25(d1, "Maru");
-		MyThread_25 mt2 = new MyThread_25(d1, "Mike");
+		MyThread_25 mt2 = new MyThread_25(d2, "Mike");
+//		MyThread_25 mt2 = new MyThread_25(d1, "Mike");
 		mt1.start();
 		mt2.start();
 	}
