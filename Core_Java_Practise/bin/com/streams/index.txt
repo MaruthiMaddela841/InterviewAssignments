@@ -1,0 +1,156 @@
+Think about the question you're asking:
+                    STREAM
+                       │
+          ┌────────────┼────────────┐
+          ↓            ↓            ↓
+       MODIFY       SEARCH        RESULT
+          │            │            │
+          ↓            ↓            ↓
+      filter()      anyMatch()    collect()
+      map()         allMatch()    toArray()
+      flatMap()     noneMatch()   count()
+      distinct()    findFirst()   min()
+      sorted()      findAny()     max()
+      limit()
+      skip()
+      
+THEN:
+             COLLECT
+                │
+       ┌────────┼─────────┐
+       ↓        ↓         ↓
+    List       Set       Map
+       │        │         │
+ toList()    toSet()   groupingBy()
+                         partitioningBy()
+       
+And numeric processing:
+
+Stream<Integer>
+       │
+       ↓
+  mapToInt()
+       │
+       ↓
+   IntStream
+       │
+ ┌─────┼──────┐
+ ↓     ↓      ↓
+sum() min()  max()
+      ↓
+  average()
+
+Memorize these core patterns:
+// FILTER
+stream.filter(condition)
+
+// TRANSFORM
+stream.map(function)
+
+// FLATTEN
+stream.flatMap(function)
+
+// SORT
+stream.sorted()
+
+// COUNT
+stream.count()
+
+// SEARCH
+stream.anyMatch(condition)
+stream.allMatch(condition)
+stream.noneMatch(condition)
+
+// FIND
+stream.findFirst()
+stream.findAny()
+
+// MIN/MAX
+stream.min(comparator)
+stream.max(comparator)
+
+// COLLECT
+stream.collect(Collectors.toList())
+
+// GROUP
+stream.collect(
+    Collectors.groupingBy(...)
+)
+
+// PARTITION
+stream.collect(
+    Collectors.partitioningBy(...)
+)
+
+// ARRAY
+stream.toArray(Type[]::new)
+
+// PRIMITIVE
+stream.mapToInt(...)
+
+// SUM
+stream.mapToInt(...).sum()
+
+// AVERAGE
+stream.mapToInt(...).average()
+
+
+The Most Important Stream Patterns:
+Question                              Pattern
+──────────────────────────────────────────────────────────
+
+Select elements                       filter()
+
+Transform elements                    map()
+
+Flatten nested elements               flatMap()
+
+Remove duplicates                     distinct()
+
+Sort                                 sorted()
+
+Take first N                         limit()
+
+Skip first N                         skip()
+
+Perform action                       forEach()
+
+Count                                count()
+
+Does ANY exist?                      anyMatch()
+
+Are ALL valid?                       allMatch()
+
+Does NONE exist?                     noneMatch()
+
+Get first                           findFirst()
+
+Get any                             findAny()
+
+Smallest                            min()
+
+Largest                             max()
+
+Convert to collection                collect()
+
+Convert to array                    toArray()
+
+Group                                groupingBy()
+
+Split into true/false                partitioningBy()
+
+Combine into string                  joining()
+
+Sum numeric values                   mapToInt().sum()
+
+Average                              mapToInt().average()
+
+Primitive int stream                 mapToInt()
+
+Primitive → object stream            boxed()
+
+Create finite numeric range          range()/rangeClosed()
+
+Create potentially infinite stream   generate()/iterate()
+
+Combine streams                      concat()
