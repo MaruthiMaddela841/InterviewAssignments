@@ -1,0 +1,125 @@
+CREATIONAL
+│
+├── 1. Factory
+├── 2. Builder
+└── 3. Singleton
+│
+STRUCTURAL
+│
+├── 4. Adapter
+├── 5. Decorator
+└── 6. Proxy
+│
+BEHAVIORAL
+│
+├── 7. Strategy
+├── 8. Observer
+├── 9. Template Method
+└── 10. Command
+
+1. FACTORY
+→ CREATE objects
+→ "Which object should I create?"
+→ Creational
+→ Example: PaymentFactory → UPI/Card/PayPal
+
+
+2. BUILDER
+→ BUILD complex objects step-by-step
+→ "How do I construct this object?"
+→ Creational
+→ Example: User.builder().name().age().build()
+
+
+3. SINGLETON
+→ ONE instance
+→ "How do I ensure only one object exists?"
+→ Creational
+→ Example: ConfigurationManager
+
+
+4. ADAPTER
+→ CONVERT incompatible interfaces
+→ "How can these two incompatible classes work together?"
+→ Structural
+→ Example: Old API → New API
+
+
+5. DECORATOR
+→ ADD behavior dynamically
+→ "How can I add functionality without modifying the original?"
+→ Structural
+→ Example: Coffee → Milk → Sugar
+
+
+6. PROXY
+→ CONTROL ACCESS to another object
+→ "Should access to this object be allowed/intercepted?"
+→ Structural
+→ Example: Security, caching, lazy loading
+
+
+7. STRATEGY
+→ CHOOSE an algorithm
+→ "Which algorithm/behavior should I use?"
+→ Behavioral
+→ Example: Payment → UPI/Card/PayPal
+
+
+8. OBSERVER
+→ NOTIFY many objects
+→ "Who needs to know that something changed?"
+→ Behavioral
+→ Example: Stock → App/Email/Dashboard
+
+
+9. TEMPLATE METHOD
+→ FIX workflow, CUSTOMIZE steps
+→ "Same recipe, different steps."
+→ Behavioral
+→ Uses inheritance
+→ Example: Test → setup → execute → verify → cleanup
+
+
+10. COMMAND
+→ TURN an action into an object
+→ "How can I store/queue/undo this action?"
+→ Behavioral
+→ Example: TurnOnCommand → Light
+
+FACTORY    → CREATE
+BUILDER    → CONSTRUCT
+SINGLETON  → ONE
+
+ADAPTER    → CONVERT
+DECORATOR  → ADD
+PROXY      → CONTROL
+
+STRATEGY   → CHOOSE
+OBSERVER   → NOTIFY
+TEMPLATE   → WORKFLOW
+COMMAND    → ACTION
+
+Factory vs Builder
+→ Factory = choose/create object
+→ Builder = construct complex object step-by-step
+
+Strategy vs Template Method
+→ Strategy = composition, replace algorithm
+→ Template = inheritance, customize steps
+
+Strategy vs Command
+→ Strategy = HOW
+→ Command = WHAT action
+
+Observer vs Command
+→ Observer = notification
+→ Command = request/action
+
+Decorator vs Proxy
+→ Decorator = ADD functionality
+→ Proxy = CONTROL access
+
+Adapter vs Decorator
+→ Adapter = CHANGE interface
+→ Decorator = ADD behavior

@@ -16,7 +16,7 @@ public class DatabaseExecutorProxy implements DatabaseExecutor {
 	public void executeDatabase(String query) {
 		
 		if(ifAdmin) {
-			System.out.println("Admin can delete also.");
+			System.out.println("Admin can delete/select also.");
 			databaseExecutorImpl.executeDatabase(query);
 		}
 		else {
